@@ -1,15 +1,18 @@
 <mat-toolbar class="header">
   <mat-toolbar-row>
     <div class="container">
-      <!--Logo-->
+      
       <div class="row">
+        <!--Logo-->
         <div class="col-sm">
+          
           <img src="assets/logo_congreso.png" />
         </div>
 
         <!--La parte central del mat toolbar-->
         <div class="col-sm">
           <div class="row">
+
             <div class="col-3">
               <button mat-button [routerLink]="['/']">Inicio</button>
             </div>
@@ -28,7 +31,6 @@
                 </button>
               </mat-menu>
             </div>
-
             <div class="col-3">
               <button mat-button [matMenuTriggerFor]="eventos">Evento</button>
               <mat-menu #eventos="matMenu" class="desple">
@@ -54,6 +56,7 @@
                 </button>
               </mat-menu>
             </div>
+          
           </div>
         </div>
 
@@ -62,19 +65,16 @@
           <div class="botones">
             <div class="row">
               <div class="col-6" style="text-align: right">
-                <button mat-raised-button color="white" [routerLink]="['/ingreso']">Inicio de sesión</button>
-              </div>
-              <div class="col-6" style="text-align: center">
-                <button mat-raised-button style="background-color: #fc9f49;margin-left: 40%;">
-                  Cerrar sesión
-                </button>
+                <button class="button-session" mat-raised-button 
+                 [routerLink]="['/ingreso']">Inicio de sesión</button>
               </div>
             </div>
           </div>
-
         </div>
+
       </div>
     </div>
+
   </mat-toolbar-row>
 </mat-toolbar>
 
